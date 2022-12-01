@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <a class="navbar-brand text-white" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-white" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="about.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Teams
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Html</a>
+                <a class="dropdown-item" href="#">css</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">JavaScript</a>
+                <a class="dropdown-item" href="#">React</a>
+
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="contactUs.html" tabindex="-1" aria-disabled="true">Contact US</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0 text-white" type="submit">Search</button>
+          </form>
+        </div>
+        <button type="button" class="btn btn-primary m-2 bg-danger" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Login</button>
+<button type="button" class="btn btn-primary mr-3 bg-danger" data-toggle="modal" data-target="#exampleModal1" data-whatever="@fat">SignUp</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Email</label>
+            <input type="email" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Password</label>
+            <input type="password" class="form-control" id="message-text"/>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Login</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">SignUp</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="first-name" class="col-form-label">First Name</label>
+              <input type="text" class="form-control" id="first-name">
+            </div>
+            <div class="form-group">
+                <label for="last-name" class="col-form-label">last Name</label>
+                <input type="text" class="form-control" id="last-name">
+              </div>
+              <div class="form-group">
+                <label for="email" class="col-form-label">email</label>
+                <input type="text" class="form-control" id="email">
+              </div>
+              <div class="form-group">
+                <label for="pass" class="col-form-label">Password</label>
+                <input type="password" class="form-control" id="pass">
+              </div>
+            <div class="form-group">
+              <label for="cpass" class="col-form-label">conform Password</label>
+              <input type="password" class="form-control" id="cpass"/>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">SignUp</button>
+        </div>
+      </div>
+    </div>
+  </div>
+      </nav>
+    <h1 class="text-center mt-3">Please Get in Touch and our expert support <br/> team will answer all your questions</h1>
+    <div class="d-flex flex-row mt-5">
+        <div class="card  w-50 shadow m-2">
+            <div class="card-body ">
+                <div class="input-group mb-3 card-text">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">@</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Full Name" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                  <div class="input-group mb-3 card-text">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">@</span>
+                    </div>
+                    <input type="email" class="form-control" placeholder="Enter Email" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                  <div class="input-group mb-3 card-text">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">@</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Company Name" aria-label="Username" aria-describedby="basic-addon1">
+                  </div> 
+                  <p class="card-text">Are you an existing Customer?*</p>
+                  <div class="d-flex flex-row">
+                    <div class="input-group">
+                        <input type="radio"/>
+                        <p class="mt-3 ml-2">Yes</p>
+                      </div>
+                      <div class="input-group">
+                        <input type="radio"/>
+                        <p class="mt-3 ml-2">No</p>
+                      </div>
+                  </div>
+                 
+                  <div class="input-group card-text mt-4">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">Your Message</span>
+                    </div>
+                    <textarea class="form-control" placeholder="your message*" aria-label="With textarea"></textarea>
+                  </div>
+            </div>
+        </div>
+        <div class="card shadow">
+            <div class="card-body">
+                <h1 class="card-tittle">Meet our briliant and Knowledgeable Support Team</h1>
+                <p class="card-text">Live support is available mon-fri 5am-7pm ET / 10am-midnight GMT</p>
+                <hr>
+                <img src="images/hayden.jpg" class="img-rounded rounded-circle float-left" alt="hayden">
+                
+                <img src="images/franklin.jpg" class="img-rounded rounded-circle ml-4" alt="franklin">
+                <img src="images/wilson.jpg" class="rounded rounded-circle float-right" alt="wilson">
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
